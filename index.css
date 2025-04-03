@@ -1,0 +1,35 @@
+:root{
+    --color-principal: #260E59;
+    --color-secondary: #5D04D9;
+    --color-third: #056CF2;
+    --color-four: #05C7F2;
+    --color-background: #0E1126;
+    --color-transparent: transparent;
+    --color-title: white;
+    --color-subtitle: #ebebeb;
+    --color-text: #888888;
+}
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.layout{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.layout__header{
+    background-color: var(--color-background);
+    min-height: 30vh;
+}
+.layout__main{
+    background-color: var(--color-principal);
+    min-height: 70vh;
+    
+}
