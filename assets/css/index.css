@@ -1,13 +1,13 @@
 :root{
     --color-principal: #0f0624;
-    --color-secondary: #5D04D9;
+    --color-secondary: #a371e9;
     --color-third: #056CF2;
     --color-four: #05C7F2;
     --color-background: #0E1126;
     --color-transparent: transparent;
     --color-title: white;
     --color-subtitle: #ebebebe0;
-    --color-text: #888888;
+    --color-text: #a8a8a8;
 }
 html{
     font-size: 9px;
@@ -22,7 +22,7 @@ body{
     font-family: "Poppins";
 }
 
-h1{
+.border, .wave{
     font-size: 7rem;
     color:var(--color-title);
     position: absolute;
@@ -57,7 +57,7 @@ h1{
     }
   }
 
-h3{
+h3,h2{
     color: var(--color-subtitle);
 }
 .layout{
@@ -184,5 +184,87 @@ button::before{
 .layout__main{
     background-color: var(--color-background);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main__header{
+    min-height: 20%;
+    max-height: 20%;
+
+}
+.header__main__container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.svg{
+    margin-top: 20px;
+    width: 270px;
+}
+.h2Info{
+    font-size: 3.5rem;
+}
+p{
+    color: var(--color-text);
+    font-size: 2.5rem;
     
+}
+.main__sections{
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.main__section1{
+    display: flex;
+    min-height: 70vh;
+    margin-bottom: 70px;
+}
+.main__section2{
+    width: 100%;
+    
+
+}
+.section2__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+.main__section1 > img{
+    width: 100vh;
+    height: 70vh;
+
+}
+.main__section4{
+    width: 100%;
+}
+.main__section4 > h3{
+
+    text-align: center;
+    word-wrap: normal;
+    font-size: 2.5rem;
+}
+.cointaner__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cointaner__column > p{
+    font-style: italic;
+}
+footer{
+    margin-bottom: 40px;
+}
+p > a{
+    text-decoration: none;
+    color: var(--color-secondary);
 }
