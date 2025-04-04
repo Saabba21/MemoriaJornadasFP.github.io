@@ -216,17 +216,13 @@ span{
     white-space: nowrap;
     color: var(--color-text);
     font-size: 2.5rem;
-    border-right: 4px solid;
-    width: 18ch;
-    animation: typing 2s steps(18),
-        blink .5s infinite step-end alternate;
+    width: 22ch;
+    animation: typing 2s steps(22);
         overflow: hidden;
+       
 }
 @keyframes typing {
     from {width: 0;}
-}
-@keyframes blink{
-    50% {border-color: transparent;}
 }
 .main__sections{
     width: 100%;
