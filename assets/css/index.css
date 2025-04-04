@@ -1,0 +1,188 @@
+:root{
+    --color-principal: #0f0624;
+    --color-secondary: #5D04D9;
+    --color-third: #056CF2;
+    --color-four: #05C7F2;
+    --color-background: #0E1126;
+    --color-transparent: transparent;
+    --color-title: white;
+    --color-subtitle: #ebebebe0;
+    --color-text: #888888;
+}
+html{
+    font-size: 9px;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "Poppins";
+}
+
+h1{
+    font-size: 7rem;
+    color:var(--color-title);
+    position: absolute;
+    top: 170px
+}
+.border{
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    -1px -1px 0 rgb(78, 78, 78),
+    1px -1px 0 rgb(78, 78, 78),
+    -1px 1px 0 rgb(78, 78, 78),
+    1px 1px 0 rgb(78, 78, 78)
+}
+.wave{
+    color:rgb(158, 72, 173);
+    animation: wave 3s ease-in-out infinite;
+}
+.two {
+    transform: translateY(0.8em);
+  }
+  
+  .three {
+    transform: translateY(-0.8em);
+  }
+  @keyframes wave {
+    0%, 100% {
+      clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+  
+    50% {
+      clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+  }
+
+h3{
+    color: var(--color-subtitle);
+}
+.layout{
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+.layout__header{
+    background-color: var(--color-background);
+    min-height: 100vh;
+    background-image: url(../img/BANNER2.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: banner 1.5s ease-in-out forwards;
+}
+.layout__header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: var(--color-text);
+}
+
+@keyframes banner{
+    0%{
+        background-position: 200px -800px;
+    }
+    100%{
+        background-position: center center;
+    }
+}
+.header__container{
+height: 100vh;
+display: flex;
+align-items: center;
+}
+.header__info{
+    font-size: 2.3rem;
+    width: 40%;
+    height: 100%;
+    padding-left: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.info__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+}
+.info__button{
+
+    color: var(--color-text);
+    text-decoration: none;
+    
+}
+button{
+    margin-top: 30px;
+    background: black;
+    cursor: pointer;
+    border: none;
+    width: 190px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    
+}
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #B562D9, #140826, #1D1340, #4E54BF, #d7f20c57, #B562D9, #140826, #4E54BF);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+/*MID*/
+.layout__mid{
+    position: relative;
+    padding-bottom: 50px;
+    min-height: 70vh;
+    background-image: url(../img/mmmmm.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+.layout__mid::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        height: 2px;
+        background-color:var(--color-text);
+}
+/*MAIN*/
+.layout__main{
+    background-color: var(--color-background);
+    min-height: 100vh;
+    
+}
