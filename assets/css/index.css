@@ -301,3 +301,34 @@ p > a{
         scroll-behavior: smooth
     }
 }
+@media (max-width: 768px) {
+    .layout__header{
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .header__info{
+        width: 100%;
+        padding-left: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .main__header{
+        min-height: auto;
+    }
+
+    .header__main__container h1,
+    .header__main__container p {
+        text-align: center;
+    }
+
+    .section2__container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .cointaner__column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
