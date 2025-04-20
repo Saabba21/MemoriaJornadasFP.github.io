@@ -26,7 +26,7 @@ body{
     font-size: 7rem;
     color:var(--color-title);
     position: absolute;
-    top: 150px
+    top: 70px
 }
 .border{
     color: rgb(255, 255, 255);
@@ -279,4 +279,25 @@ footer{
 p > a{
     text-decoration: none;
     color: var(--color-secondary);
+}
+
+@media (max-width: 1750px) {
+    html{
+        font-size: 7px;
+        scroll-behavior: smooth
+    }
+}
+
+
+@media (max-width: 1450px) {
+    html{
+        font-size: 6px;
+        scroll-behavior: smooth
+    }
+}
+@media (max-width: 1000px) {
+    html{
+        font-size: 4px;
+        scroll-behavior: smooth
+    }
 }
